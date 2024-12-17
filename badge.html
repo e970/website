@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+</head>
+<style>
+  /* @keyframes jump {
+  0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+  40%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
+  100% {transform: translate3d(0,100%,0) scale3d(1.5,.7,1);}
+  } */
+
+  @keyframes jumpFr{100%{-webkit-transform:translate(0px, -5px);transform:translate(2px, -3px)  }  }
+
+    .posRel{position: relative;}
+    .jump{
+      position: absolute;;
+      left: -50px;
+      top: -35px;
+      animation: jumpFr .8s linear infinite alternate-reverse both;
+      animation-duration: 0.8s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      animation-fill-mode: both;
+      animation-play-state: running;
+      animation-name: jumpFr;
+      z-index: 5;
+      -webkit-box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+      box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+      background-color: #b94a48;
+      /* width:auto; */
+      }
+    .container img{width:120px;}
+</style>
+<body>
+
+<div class="container">
+  <h2>Badges on Buttons</h2>
+  <button type="button" class="btn btn-primary">Primary <span class="badge">7</span></button>
+  <button type="button" class="btn btn-success">Success <span class="badge">3</span></button>    
+  <button type="button" class="btn btn-danger">Danger <span class="badge">5</span></button>
+  <H2>Badges on img</H2>
+  <img src='http://10.70.2.23/psm/imgs/psmBtn01.png'> <span class='posRel'><span class='badge jump'>2 天前</span></span>
+  <img src='http://10.70.2.23/psm/imgs/psmBtn02.png'> <span class='posRel'><span class='badge jump'>2 天前</span></span>
+  <img src='http://10.70.2.23/psm/imgs/psmBtn03.png'> <span class='posRel'><span class='badge jump'>1 天前</span></span>
+  <img src='http://10.70.2.23/psm/imgs/psmBtn04.png'> <span class='posRel'><span class='badge jump'>1 天前</span></span>
+  <img src='http://10.70.2.23/psm/imgs/psmBtn05.png'> <span class='posRel'><span class='badge jump'>1 天前</span></span>
+  <img src='http://10.70.2.23/psm/imgs/psmBtn06.png'> <span class='posRel'><span class='badge jump'>1 天前</span></span>
+  <img src='http://10.70.2.23/psm/imgs/psmBtn07.png'> <span class='posRel'><span class='badge jump'>1 天前</span></span>
+  <img src='http://10.70.2.23/psm/imgs/psmBtn08.png'> <span class='posRel'><span class='badge jump'>1 天前</span></span>
+</div>
+
+</body>
+</html>
